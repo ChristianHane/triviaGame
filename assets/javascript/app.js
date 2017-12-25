@@ -49,7 +49,7 @@ $("#restart").on("click", function(){
 });
 
 function timer(){
-    document.getElementById("timer").innerHTML = 0 + ":" + 02;
+    document.getElementById("timer").innerHTML = 2 + ":" + 00;
     startTimer();
 };
 
@@ -66,12 +66,12 @@ function startTimer() {
     minutes + ":" + seconds;
     var timeOut = setTimeout(startTimer, 1000);
 
-    for(i = 0; i < ; i++){
-        if($("#timer") === "0:00"){
-            console.log("done")
-            gameOver();
-        };
-    }
+    // for(i = 0; i < ; i++){
+    //     if($("#timer") === "0:00"){
+    //         console.log("done")
+    //         gameOver();
+    //     };
+    // }
 };
 
 function checkSecond(sec) {
