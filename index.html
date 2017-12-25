@@ -5,54 +5,63 @@
     <title>Star Wars Trivia</title>
 </head>
 <body>
-    <h1>Star Wars Trivia!</h1>
-    <h2>Time remaining: </h2>
-    <p id="question1">
-        Question
-        <form action="">
-            <input type="radio" name="test" value="">test
-            <input type="radio" name="test" value="">test
-            <input type="radio" name="test" value="">test
-            <input type="radio" name="test" value="">test            
+    <div id="timer"></div>
+    <button id="start">START</button>
+    <h1 class="hidden">Star Wars Trivia!</h1>
+    <h2 class="hidden">Time remaining: </h2>
+    <p class="hidden" id="question1">
+        What did Luke Skywalker's uncle, Owen, operate on Tatooine?
+        <form class="hidden" action="">
+            <input class="choice" id="correctQ1"  type="radio" name="test" value="correct">test
+            <input class="choice" type="radio" name="test" value="incorrect">test
+            <input class="choice" type="radio" name="test" value="incorrect">test
+            <input class="choice" type="radio" name="test" value="incorrect">test          
         </form>
     </p>
-    <p id="question2">
+    <p class="hidden" id="question2">
         Question
-        <form action="">
-            <input type="radio" name="test2" value="">test
-            <input type="radio" name="test2" value="">test
-            <input type="radio" name="test2" value="">test
-            <input type="radio" name="test2" value="">test           
+        <form class="hidden" action="">
+            <input class="choice" type="radio" name="test2" value="incorrect">test
+            <input class="choice" type="radio" name="test2" value="incorrect">test
+            <input class="choice" id="correctQ2"  type="radio" name="test2" value="correct">test
+            <input class="choice" type="radio" name="test2" value="incorrect">test                     
         </form>
     </p>
-    <p id="question3">
+    <p class="hidden" id="question3">
         Question
-        <form action="">
-            <input type="radio" name="test" value="">test
-            <input type="radio" name="test" value="">test
-            <input type="radio" name="test" value="">test
-            <input type="radio" name="test" value="">test            
+        <form class="hidden" action="">
+            <input class="choice"  type="radio" name="test" value="incorrect">test
+            <input class="choice" type="radio" name="test" value="incorrect">test
+            <input class="choice" type="radio" name="test" value="incorrect">test
+            <input class="choice" id="correctQ3" type="radio" name="test" value="correct">test 
         </form>
     </p>
-    <p id="question4">
+    <p class="hidden" id="question4">
         Question
-        <form action="">
-            <input type="radio" name="test4" value="">test
-            <input type="radio" name="test4" value="">test
-            <input type="radio" name="test4" value="">test
-            <input type="radio" name="test4" value="">test            
+        <form class="hidden" action="">
+            <input class="choice" id="correctQ4" type="radio" name="test4" value="correct">test
+            <input class="choice" type="radio" name="test4" value="incorrect">test
+            <input class="choice" type="radio" name="test4" value="incorrect">test
+            <input class="choice" type="radio" name="test4" value="incorrect">test      
         </form>
     </p>
-    <p id="question5">
+    <p class="hidden" id="question5">
         Question
-        <form action="">
-            <input type="radio" name="" value="">test
-            <input type="radio" name="" value="">test
-            <input type="radio" name="" value="">test
-            <input type="radio" name="" value="">test            
+        <form class="hidden" action="">
+            <input class="choice" type="radio" name="test" value="incorrect">test
+            <input class="choice" id="correctQ5" type="radio" name="test" value="correct">test
+            <input class="choice" type="radio" name="test" value="incorrect">test
+            <input class="choice" type="radio" name="test" value="incorrect">test       
         </form>
     </p>
+    <div class="done">
+        <p class="done">All Done!!</p>
+        <p class="done" id="correct">Correct Answers: </p>
+        <p class="done" id="incorrect">Incorrect or Unanswered Questions: </p>
+        <button class="done" id="restart">Restart</button>
+    </div>
+    <button class="hidden" id="done">DONE</button>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="assets/javascript/game.js"></script>
+    <script src="assets/javascript/app.js"></script>
 </body>
 </html>
